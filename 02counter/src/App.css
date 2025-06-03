@@ -1,0 +1,174 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.buttons {
+  background-color: grey;
+  margin-top: 10px;
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px
+}
+.buttons:hover {
+  background-color: white;
+  color: black;
+}
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+.logo {
+  font-size: 24px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #ffcc70, #ffdde1);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Products Section */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.product-card h3 {
+  margin: 10px 0;
+}
+.product-card p {
+  color: green;
+  font-weight: bold;
+}
+.product-card button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* UX Sections */
+.ux-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+/* Animation Classes */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide-in {
+  transform: translateX(-100px);
+}
+.zoom-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.zoom-in {
+  transform: scale(0.9);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
